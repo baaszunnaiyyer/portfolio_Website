@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+	
+
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+
+
+    <div id="root" class="hidden"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+		const loaderC = document.querySelector('.loader-container');
+		const root = document.querySelector('#root');
+	
+		window.addEventListener('load', () => {
+			setTimeout(() => {
+				if (loaderC) loaderC.classList.add('hidden'); // Hide loader
+				if (root) root.classList.remove('hidden'); // Show main content
+	
+				// Dispatch custom event for Hero component to start animation
+				window.dispatchEvent(new Event('loaderHidden'));
+			}, ); // 5-second delay
+		});
+	</script>
+	
+
+  </body>
+</html>
