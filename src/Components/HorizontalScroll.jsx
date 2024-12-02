@@ -18,7 +18,7 @@ const HorizontalScroll = () => {
         scrub: 1,
         start: "",
         end: "+=3000",
-        markers: true
+        markers: false
       }
     });
 
@@ -30,7 +30,7 @@ const HorizontalScroll = () => {
         trigger: ".horizontalSec",
         containerAnimation: scrollTween,
         start: "left 70%",
-        markers: true,
+        markers: false,
       }
     });
 
@@ -42,15 +42,15 @@ const HorizontalScroll = () => {
         
         {/*First Div */}
         <div className="w-screen h-screen flex items-center justify-center bg-black text-white">
-          <h1 className="text-9xl font-black">The Process</h1>
+          <h1 className="sm:text-9xl text-4xl font-black">The Process</h1>
         </div>
 
         {/*Second Div */}
-        <div ref={horizontalSec} className="horizontalSec w-screen h-screen flex items-center justify-around bg-black text-white">
+        <div ref={horizontalSec} className="horizontalSec w-screen h-screen flex sm:flex-row flex-col items-center justify-around bg-black text-white">
 
           <div className='font-bold justify-center max-w-sm text-left items-center space-y-12'>
-            <div className='text-4xl'>
-              <h1 className='text-2xl'>01</h1>
+            <div className='sm:text-4xl'>
+              <h1 className='sm:text-2xl'>01</h1>
               <h1>Research &</h1>
               <h1>Discovery</h1>
             </div>
@@ -62,8 +62,8 @@ const HorizontalScroll = () => {
           </div>
 
           <div className='font-bold justify-center max-w-sm text-left items-center space-y-12'>
-            <div className='text-4xl'>
-              <h1 className='text-2xl'>02</h1>
+            <div className='sm:text-4xl'>
+              <h1 className='sm:text-2xl'>02</h1>
               <h1>Strategy &</h1>
               <h1>Creative</h1>
               <h1>Direction</h1>
@@ -78,11 +78,11 @@ const HorizontalScroll = () => {
         </div>
 
         {/*Third Div */}
-        <div ref={horizontalSec} className="horizontalSec w-screen h-screen flex items-center justify-around bg-black text-white">
+        <div ref={horizontalSec} className="horizontalSec w-screen h-screen flex sm:flex-row flex-col items-center justify-around bg-black text-white">
 
           <div className='font-bold justify-center max-w-sm text-left items-center space-y-12'>
-            <div className='text-4xl'>
-              <h1 className='text-2xl'>03</h1>
+            <div className='sm:text-4xl'>
+              <h1 className='sm:text-2xl'>03</h1>
               <h1>Design &</h1>
               <h1>Development</h1>
             </div>
@@ -94,8 +94,8 @@ const HorizontalScroll = () => {
           </div>
 
           <div className='font-bold justify-center max-w-sm text-left items-center space-y-12'>
-            <div className='text-4xl'>
-              <h1 className='text-2xl'>04</h1>
+            <div className='sm:text-4xl'>
+              <h1 className='sm:text-2xl'>04</h1>
               <h1>Quality</h1>
               <h1>Assurance</h1>
             </div>

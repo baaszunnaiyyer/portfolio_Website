@@ -24,7 +24,7 @@ const StickySection = () => {
                 start: '40% 40%',
                 end: '40% 0%',
                 scrub: true,
-                markers: true, // Enables markers for debugging
+                markers: false, // Enables markers for debugging
               },
             }
           );
@@ -49,7 +49,7 @@ const StickySection = () => {
       <div className="relative h-[200vh] w-screen bg-black text-center">
         <div
           ref={(el) => (sectionRefs.current[0] = el)}
-          className="sticky top-0 h-screen text-left text-7xl font-semibold text-white justify-center items-center flex"
+          className="sticky top-0 h-screen text-left sm:text-7xl text-3xl font-semibold text-white justify-center items-center flex"
         >
           Truly Great Work
           <br />
@@ -60,7 +60,7 @@ const StickySection = () => {
       <div className="relative h-[200vh] w-screen bg-black text-center">
         <div
           ref={(el) => (sectionRefs.current[1] = el)}
-          className="sticky top-0 h-screen text-7xl font-semibold text-white justify-center items-center grid"
+          className="sticky top-0 h-screen sm:text-7xl text-3xl font-semibold text-white justify-center items-center grid"
         >
           <div>
             Without strategy, the

@@ -9,11 +9,11 @@ const About = () => {
     const tl = gsap.timeline({yoyo:true, repeat:-1});
 
     // Animate each "Developer" div one by one with a delay
-    tl.to(animtedText.current, {y:0 , duration: 1})
-      .to(animtedText.current, { y: -75, duration:2, ease: "elastic.inOut" }) // First Developer
-      .to(animtedText.current, {y: -75, duration:2})
-      .to(animtedText.current, {y: -150, duration:2 , ease: "elastic.inOut"})
-      .to(animtedText.current, {y: -150, duration:1})
+    tl.to(animtedText.current, {y:"0%" , duration: 1})
+      .to(animtedText.current, { y: "-33.3%", duration:2, ease: "elastic.inOut" }) // First Developer
+      .to(animtedText.current, {y: "-33.3%", duration:2})
+      .to(animtedText.current, {y: "-66.6%", duration:2 , ease: "elastic.inOut"})
+      .to(animtedText.current, {y: "-66.6%", duration:1})
       
       
       
@@ -21,11 +21,9 @@ const About = () => {
 
   return (
     <div className='h-screen w-screen bg-white text-center justify-center items-center flex'>
-      <div className='text-left text-7xl font-semibold'>
-        <div>
-          NAME SURNAME IS A
-        </div>
-        <div className='overflow-hidden max-h-16 -translate-x-24'>
+      <div className=' sm:text-left sm:text-7xl text-2xl font-semibold'>
+        <div>KASRA ZUNNAIYYER IS A</div>  
+        <div className='overflow-hidden max-h-8 sm:max-h-16  sm:-translate-x-24'>
           <div ref={animtedText}>
             <div>DEVELOPER</div>
             <div>ARTIST</div>
@@ -33,8 +31,8 @@ const About = () => {
           </div>
         </div>
         <div>DEDICATED TO FINDING</div>
-        <div className='-translate-x-24'>STRATEGIC, ENGAGING</div>
-        <div className='-translate-x-24'>CREATIVE SOLUTIONS.</div>
+        <div className='sm:-translate-x-24'>STRATEGIC, ENGAGING</div>
+        <div className='sm:-translate-x-24'>CREATIVE SOLUTIONS.</div>
         <div>CURRENTLY BASED IN</div>
         <div>KARACHI, PAKISTAN.</div>
       </div>
